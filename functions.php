@@ -78,8 +78,15 @@ function bear_body_class( $wp_classes, $extra_classes ) {
   return array_merge( $wp_classes, (array) $extra_classes );
 }
 
+/** load custom 'Google' fonts */
+function bear_load_fonts() {
+  wp_register_style('fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:300,400');
+  wp_enqueue_style( 'fonts');
+}
+
 /** Actions (in order) */
 add_action( 'after_setup_theme', 'bear_setup' );
 add_action( 'wp_enqueue_scripts', 'bear_scripts' );
+add_action('wp_print_styles', 'bear_load_fonts');
 add_filter( 'wp_nav_menu_args', 'bear_nav_args' );
 add_filter( 'body_class', 'bear_body_class', 10, 2);

@@ -11,7 +11,7 @@
 
       if ( is_front_page() ) :
 
-        echo("we are on the front page, woo!");
+        get_template_part('templates/main', 'intro');
 
       else :
 
