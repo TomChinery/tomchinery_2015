@@ -48,7 +48,8 @@ section.intro {
   section.intro a {
     display: block;
     text-decoration: none;
-    color: #2f363b; }
+    color: #2f363b;
+    margin-top: 5px; }
   section.intro article {
     width: 45%;
     float: left; }
@@ -58,6 +59,10 @@ section.intro {
     width: 100%;
     height: 1px;
     margin: 30px auto 20px auto; }
+  section.intro article p {
+    margin-top: 30px; }
+  section.intro .contain {
+    margin-top: 90px; }
   section.intro .line-nav {
     height: 10px;
     width: 25%;
@@ -71,6 +76,48 @@ section.intro {
     background-color: #2ecc71; }
   section.intro .line-nav:nth-child(4) {
     background-color: #f1c40f; }
+  section.intro .box:before {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    margin-right: 20px;
+    background: #95999b;
+    color: white;
+    content: "S";
+    margin-top: -15px; }
+  section.intro .right-arrow {
+    vertical-align: middle;
+    font-size: 20px;
+    color: gray; }
+  section.intro article:hover {
+    cursor: pointer; }
+    section.intro article:hover .right-arrow {
+      color: #93b9ec; }
+  section.intro .chevron {
+    font-size: 2em;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 45px;
+    margin: 280px auto 0 auto;
+    cursor: pointer; }
+  section.intro .chevron:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  section.intro .left, section.intro .right {
+    height: 50px;
+    width: 50px;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid gray;
+    margin: 70px auto 0 auto;
+    transform: rotate(45deg);
+    display: inline-block;
+    cursor: pointer; }
+  section.intro .right {
+    border: none;
+    border-right: 2px solid gray;
+    border-top: 2px solid gray; }
 
 .contain {
   max-width: 1020px;
