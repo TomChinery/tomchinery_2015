@@ -1,7 +1,14 @@
-span.icon-menu7 {
+span.icon-menu7,
+span.icon-cross2 {
   font-size:4em;
   position:absolute;
   right:20px;
   top:20px;
   cursor:pointer;
+  padding:3px;
+}
+
+span.icon-cross2:hover {
+  border-radius:20px;
+  background-color:rgba(0,0,0,0.1);
 }
