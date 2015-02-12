@@ -3,5 +3,15 @@
 /** assign variables */
 $font-color: #2f363b;
 
+$blue-color: #3498db;
+$red-color: #e74c3c;
+$green-color: #2ecc71;
+$yellow-color: #f1c40f;
+
 @import 'typography';
 @import 'intro';
+
+.contain {
+  max-width:1020px;
+  margin:0 auto;
+}

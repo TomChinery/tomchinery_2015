@@ -3,7 +3,7 @@
 /** import custom fonts */
 @font-face {
   font-family: 'Futura';
-  src: url("./futura-bold.ttf"); }
+  src: url("http://localhost/~tomchinery/tomchinery_2015/public/wp-content/themes/tomchinery/fonts/futura-bold.ttf"); }
 /** create some common styles */
 body {
   color: #2f363b; }
@@ -14,7 +14,64 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+h1 {
+  font-size: 16px; }
+
 article {
   font-family: 'Droid Serif', serif;
   font-size: 14px;
   text-align: left; }
+
+strong {
+  font-size: 16px;
+  font-weight: 800; }
+
+.italic {
+  font-style: italic; }
+
+.huge-text {
+  font-family: 'Futura';
+  font-size: 6em;
+  text-transform: uppercase;
+  display: block;
+  padding-top: 70px;
+  font-weight: bold; }
+
+section.intro {
+  text-align: center; }
+  section.intro hr {
+    width: 10%;
+    height: 2px;
+    border: none;
+    background-color: #2f363b;
+    margin: 30px auto 35px auto; }
+  section.intro a {
+    display: block;
+    text-decoration: none;
+    color: #2f363b; }
+  section.intro article {
+    width: 45%;
+    float: left; }
+  section.intro article:nth-child(2) {
+    margin-left: 10%; }
+  section.intro article hr {
+    width: 100%;
+    height: 1px;
+    margin: 30px auto 20px auto; }
+  section.intro .line-nav {
+    height: 10px;
+    width: 25%;
+    background-color: gray;
+    float: left; }
+  section.intro .line-nav:nth-child(1) {
+    background-color: #3498db; }
+  section.intro .line-nav:nth-child(2) {
+    background-color: #e74c3c; }
+  section.intro .line-nav:nth-child(3) {
+    background-color: #2ecc71; }
+  section.intro .line-nav:nth-child(4) {
+    background-color: #f1c40f; }
+
+.contain {
+  max-width: 1020px;
+  margin: 0 auto; }

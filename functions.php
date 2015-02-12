@@ -52,9 +52,9 @@ endif;
 
 /** Enqueue scripts and styles */
 function bear_scripts() {
-  wp_enqueue_style( 'bear-style', get_template_directory_uri() . "/css/main.css");
-
   wp_enqueue_style( 'bear-reset', get_template_directory_uri() . "/css/reset.css");
+
+  wp_enqueue_style( 'bear-style', get_template_directory_uri() . "/css/main.css");
 }
 
 /** Set navigation defaults */
