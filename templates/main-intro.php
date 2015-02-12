@@ -6,6 +6,8 @@
   <span class="line-nav"></span>
   <span class="line-nav"></span>
 
+  <span class="icon-menu7"></span>
+
   <span class="left"></span>
   <span class="right"></span>
 

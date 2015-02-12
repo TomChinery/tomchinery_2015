@@ -119,6 +119,13 @@ section.intro {
     border-right: 2px solid gray;
     border-top: 2px solid gray; }
 
+span.icon-menu7 {
+  font-size: 4em;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer; }
+
 .contain {
   max-width: 1020px;
   margin: 0 auto; }

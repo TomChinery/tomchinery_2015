@@ -80,8 +80,10 @@ function bear_body_class( $wp_classes, $extra_classes ) {
 
 /** load custom 'Google' fonts */
 function bear_load_fonts() {
-  wp_register_style('fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:300,400');
-  wp_enqueue_style( 'fonts');
+  wp_register_style( 'icomoon', 'http://i.icomoon.io/public/temp/fa7348042d/UntitledProject1/style.css');
+  wp_register_style( 'fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:300,400');
+  wp_enqueue_style( 'fonts' );
+  wp_enqueue_style( 'icomoon' );
 }
 
 /** Actions (in order) */
