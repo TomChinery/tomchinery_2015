@@ -19,6 +19,13 @@ $light-blue-color: #93b9ec;
 
 body {
   height:3000px;
+  overflow-y: hidden;
+
+}
+
+#main-anchor {
+  height:20px;
+  background-color:blue;
 }
 
 section {

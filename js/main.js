@@ -2,6 +2,8 @@ $(document).ready(function () {
 
   // Set Globals
   var fixedElements = [ $('header'), $('.line-bg') ];
+  var lastScrollTop = 0;
+  var scrollDir = "down";
 
   // menu is hovered
   $('.icon-menu7').hover(function () {
@@ -15,25 +17,70 @@ $(document).ready(function () {
     mainState();
   });
 
-  // if scroll reaches certain point
-  $(window).scroll(function() {
-    var h = $('body').height();
+  // on scroll
+  $(window).on ('scroll', function(e) {
     var y = $(window).scrollTop();
 
-    if ( y > 10 ) {
-      // slide to anchor
-      // go to main state
-      mainState();
+    scrollDirection(y);
 
+    if ( y > 10 ) {
+      mainState();
     }
-    // dont unset fixed unless at top
+
     if ( y < 10 ) {
-      // slide to intro anchor
       introState();
     }
+
+    for( i = 10; i < 30; i++ ) {
+
+
+      if ( y == i && scrollDir == "down") {
+
+        slideTo( $('#main-anchor') );
+
+      }
+    }
+
+    /* for( i = 400; i < 430; i++) {
+      if ( y == i && scrollDir == "up") {
+
+        slideTo( $('body') );
+
+      }
+    } */
+
+    $(document).unbind('mousewheel DOMMouseScroll');
+
   });
 
   // helper methods (that do stuff)
+  // slideTo( anchor )
+  function scrollDirection( y ) {
+    var st = y;
+
+    if (st > lastScrollTop){
+      scrollDir = "down";
+    } else {
+      scrollDir = "up";
+    }
+
+    lastScrollTop = st;
+  }
+
+  function slideTo( anchor ) {
+
+    $(document).bind('mousewheel DOMMouseScroll',function(e){
+      e.preventDefault();
+    });
+
+    $(document.body).delay(100).animate({
+        'scrollTop':   anchor.offset().top
+    }, 1000, function () {
+      console.log('animated bitchhead');
+    });
+
+  }
+
   function flipIn( element ) {
     element.show().addClass('flipInX animated');
   }
@@ -87,4 +134,5 @@ $(document).ready(function () {
 
     }, 500);
   }
+
 });

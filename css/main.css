@@ -38,7 +38,9 @@ strong {
   font-weight: bold; }
 
 section.intro {
-  text-align: center; }
+  text-align: center;
+  height: 400px;
+  margin-bottom: 400px; }
   section.intro hr {
     width: 10%;
     height: 2px;
@@ -193,7 +195,12 @@ header .line-nav:nth-child(4) {
   background-color: #f1c40f; }
 
 body {
-  height: 3000px; }
+  height: 3000px;
+  overflow-y: hidden; }
+
+#main-anchor {
+  height: 20px;
+  background-color: blue; }
 
 section {
   position: relative;
