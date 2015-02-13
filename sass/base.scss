@@ -7,6 +7,7 @@ $blue-color: #3498db;
 $red-color: #e74c3c;
 $green-color: #2ecc71;
 $yellow-color: #f1c40f;
+$overview-color: rgb(198, 207, 212);
 
 $light-blue-color: #93b9ec;
 
@@ -14,6 +15,16 @@ $light-blue-color: #93b9ec;
 @import 'intro';
 @import 'icons';
 @import 'nav';
+@import 'header';
+
+body {
+  height:3000px;
+}
+
+section {
+  position:relative;
+  z-index:1;
+}
 
 .contain {
   max-width:1020px;
