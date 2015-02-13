@@ -14,6 +14,30 @@ header {
     background:transparent;
   }
 
+  .pag-dots {
+    display:none;
+    width:192px;
+    margin:0 auto;
+    margin-top:36px;
+  }
+
+  .pag-dots a {
+    display:inline-block;
+    overflow:hidden;
+    text-indent:-32px;
+
+    height:16px;
+    width:16px;
+    margin:0 15px;
+    text-decoration:none;
+    border-radius:50px;
+    background-color:rgba(0,0,0,0.1);
+  }
+
+  .pag-dots a:nth-child(1) {
+    background-color:rgba(255,255,255,0.8);
+  }
+
   .line-nav {
     height: 10px;
     width: 25%;

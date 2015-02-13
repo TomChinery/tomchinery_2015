@@ -55,6 +55,13 @@
     <span class="line-nav"></span>
     <span class="line-nav"></span>
 
+    <div class="pag-dots">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+    </div>
+
     <span class="icon-menu7"></span>
   </div>
 </header>

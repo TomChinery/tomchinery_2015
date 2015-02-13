@@ -180,6 +180,23 @@ header .line-bg {
   width: 100%;
   transition: background 0.8s;
   background: transparent; }
+header .pag-dots {
+  display: none;
+  width: 192px;
+  margin: 0 auto;
+  margin-top: 36px; }
+header .pag-dots a {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -32px;
+  height: 16px;
+  width: 16px;
+  margin: 0 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.1); }
+header .pag-dots a:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.8); }
 header .line-nav {
   height: 10px;
   width: 25%;
@@ -194,13 +211,21 @@ header .line-nav:nth-child(3) {
 header .line-nav:nth-child(4) {
   background-color: #f1c40f; }
 
+main {
+  max-width: 940px;
+  margin: 0 auto; }
+  main p {
+    margin-top: 200px;
+    max-width: 620px;
+    font-weight: 200;
+    font-family: 'Slabo 27px', serif;
+    float: right;
+    font-size: 26px;
+    line-height: 1.65; }
+
 body {
   height: 3000px;
   overflow-y: hidden; }
-
-#main-anchor {
-  height: 20px;
-  background-color: blue; }
 
 section {
   position: relative;
@@ -209,3 +234,6 @@ section {
 .contain {
   max-width: 1020px;
   margin: 0 auto; }
+
+#main-anchor {
+  height: 20px; }

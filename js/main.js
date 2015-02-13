@@ -31,7 +31,7 @@ $(document).ready(function () {
       introState();
     }
 
-    for( i = 10; i < 30; i++ ) {
+    for( i = 10; i < 50; i++ ) {
 
 
       if ( y == i && scrollDir == "down") {

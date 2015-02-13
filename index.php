@@ -13,6 +13,12 @@
 
         get_template_part('templates/main', 'intro');
 
+?>
+        <main>
+          <?php the_content(); ?>
+        </main>
+<?php
+
       else :
 
         the_content();
