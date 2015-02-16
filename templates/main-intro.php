@@ -1,5 +1,4 @@
 
-
 <section class="intro">
   <span class="left"></span>
   <span class="right"></span>

@@ -23,7 +23,6 @@ article {
   text-align: left; }
 
 strong {
-  font-size: 16px;
   font-weight: 800; }
 
 .italic {
@@ -47,6 +46,8 @@ section.intro {
     border: none;
     background-color: #2f363b;
     margin: 30px auto 35px auto; }
+  section.intro strong {
+    font-size: 16px; }
   section.intro a {
     display: block;
     text-decoration: none;
@@ -214,14 +215,31 @@ header .line-nav:nth-child(4) {
 main {
   max-width: 940px;
   margin: 0 auto; }
+  main article {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 90px; }
   main p {
-    margin-top: 200px;
-    max-width: 620px;
-    font-weight: 200;
-    font-family: 'Slabo 27px', serif;
+    width: 620px;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
     float: right;
-    font-size: 26px;
-    line-height: 1.65; }
+    font-size: 24px;
+    line-height: 1.60; }
+  main p em {
+    margin: 25px 0;
+    display: block;
+    font-style: italic; }
+  main article h2 {
+    font-size: 2.3em;
+    float: left;
+    text-transform: uppercase;
+    max-width: 280px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-family: 'Montserrat', sans-serif; }
+  main article.type p {
+    font-size: 16px; }
 
 body {
   height: 3000px;
@@ -237,3 +255,33 @@ section {
 
 #main-anchor {
   height: 20px; }
+
+.hero {
+  margin-top: 56px;
+  margin-bottom: 90px; }
+
+.hero h1 {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  line-height: 1.65;
+  width: 366px;
+  margin: 0 auto;
+  right: 0;
+  margin-top: 9%; }
+
+.hero h1 .huge-text {
+  line-height: 1; }
+
+.overlay {
+  z-index: 1;
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.hero img {
+  max-height: 600px;
+  width: 100%; }

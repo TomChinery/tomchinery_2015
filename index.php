@@ -13,12 +13,8 @@
 
         get_template_part('templates/main', 'intro');
 
-?>
-        <main>
-          <?php the_content(); ?>
-        </main>
-<?php
-
+        get_template_part('templates/page', 'office');
+        
       else :
 
         the_content();

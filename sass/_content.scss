@@ -2,13 +2,42 @@ main {
   max-width:940px;
   margin:0 auto;
 
+  article {
+    width:100%;
+    display:inline-block;
+    margin-bottom:90px;
+  }
+
+  p:first-child {
+  }
+
   p {
-    margin-top:200px;
-    max-width:620px;
-    font-weight:200;
-    font-family: 'Slabo 27px', serif;
+    width:620px;
+    font-weight:400;
+    font-family: 'Merriweather', serif;
     float:right;
-    font-size:26px;
-    line-height:1.65;
+    font-size:24px;
+    line-height:1.60;
+  }
+
+
+  p em {
+    margin:25px 0;
+    display:block;
+    font-style:italic;
+  }
+
+  article h2 {
+    font-size:2.3em;
+    float:left;
+    text-transform:uppercase;
+    max-width:280px;
+    font-weight:900;
+    letter-spacing:-1px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  article.type p {
+    font-size:16px;
   }
 }
