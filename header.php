@@ -12,6 +12,8 @@
 
 <body <?php body_class(); ?>>
 
+  <!-- Don't steal my sourcecode, I worked on it night and day for 3 weeks to get it to this state -->
+
 <header>
   <nav>
     <span class="color-nav">
@@ -54,6 +56,16 @@
     <span class="line-nav"></span>
     <span class="line-nav"></span>
     <span class="line-nav"></span>
+
+    <div class="warning">
+      <span class="icon-warning"></span>
+      <a href="#">Open Beta V.0.8.1</a>
+    </div>
+
+    <div class="for-hire">
+      <span class="icon-office"></span>
+      <a href="#">Hire me!</a>
+    </div>
 
     <div class="pag-dots">
       <a href="#">1</a>

@@ -33,6 +33,15 @@
   </article>
 
   <article class="type">
+    <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/wordpress-logo.png" alt="wordpress" /> -->
     <?php the_field('type_1'); ?>
+  </article>
+
+  <article class="type type-2">
+    <?php the_field('type_2'); ?>
+  </article>
+
+  <article class="type">
+    <?php the_field('type_3'); ?>
   </article>
 </main>

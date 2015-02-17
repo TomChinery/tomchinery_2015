@@ -17,3 +17,46 @@ span.icon-cross2:hover {
   border-radius:20px;
   background-color:rgba(0,0,0,0.1);
 }
+
+.warning,
+.for-hire {
+  position:absolute;
+  left:0px;
+  padding:12px 20px 12px 10px;
+  top:10px;
+  color:white;
+  height:66px;
+  font-size:16px;
+  background-color:$warning-color;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.warning a,
+.for-hire a {
+  display:inline-block;
+  position:relative;
+  top:-8px;
+  color:white;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.warning a:hover,
+.for-hire a:hover {
+  text-decoration:underline;
+}
+
+.for-hire {
+  background-color:$info-color;
+  left:213px;
+}
+
+
+span.icon-warning,
+span.icon-hammer-wrench,
+span.icon-office,
+span.icon-user-tie {
+  font-size:2.5em;
+  color:white;
+  padding:3px;
+}

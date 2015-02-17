@@ -1,25 +1,19 @@
 $(document).ready(function () {
 
-  // Set Globals
   var fixedElements = [ $('header'), $('.line-bg') ];
   var lastScrollTop = 0;
   var scrollDir = "down";
 
-  // menu is hovered
   $('.icon-menu7').hover(function () {
-
     showNav();
-
   });
 
-  // if chevron is clicked or intro scroll reaches a certain point
   $('.chevron').on('click', function () {
     mainState();
   });
 
-  // on scroll
   $(window).on ('scroll', function(e) {
-    var y = $(window).scrollTop();
+    var y = $(this).scrollTop();
 
     scrollDirection(y);
 
@@ -31,30 +25,22 @@ $(document).ready(function () {
       introState();
     }
 
-    for( i = 10; i < 50; i++ ) {
+    for( i = 0; i < 300; i++ ) {
 
 
       if ( y == i && scrollDir == "down") {
 
         slideTo( $('#main-anchor') );
 
+        $(window).bind("mousewheel", function() {
+          $("html, body").stop(); // Hammertime! :D
+        });
       }
+
     }
-
-    /* for( i = 400; i < 430; i++) {
-      if ( y == i && scrollDir == "up") {
-
-        slideTo( $('body') );
-
-      }
-    } */
-
-    $(document).unbind('mousewheel DOMMouseScroll');
-
   });
 
   // helper methods (that do stuff)
-  // slideTo( anchor )
   function scrollDirection( y ) {
     var st = y;
 
@@ -68,14 +54,9 @@ $(document).ready(function () {
   }
 
   function slideTo( anchor ) {
-
-    $(document).bind('mousewheel DOMMouseScroll',function(e){
-      e.preventDefault();
-    });
-
-    $(document.body).delay(100).animate({
+    $(document.body).animate({
         'scrollTop':   anchor.offset().top
-    }, 1000, function () {
+    }, 800, function () {
       console.log('animated bitchhead');
     });
 
