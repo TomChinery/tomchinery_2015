@@ -4,7 +4,7 @@
     <img src="http://www.gravatar.com/avatar/3a04b762a5e1a27b0a9d440a8382b417?size=400px" alt="My picture" />
 
     <article>
-      <h3>New business</h3>
+      <h3>New Business / enquiries</h3>
       <a href="#">07427 644417</a>
       <a href="#">hello@tomchinery.com</a>
 
