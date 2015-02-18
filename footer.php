@@ -6,7 +6,7 @@
     <article>
       <h3>New business</h3>
       <a href="#">07427 644417</a>
-      <a href="#">hello@tomchinery.co.uk</a>
+      <a href="#">hello@tomchinery.com</a>
 
       <h3>Social</h3>
       <a href="#"><span class="icon-twitter"></span></a>

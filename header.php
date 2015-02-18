@@ -18,6 +18,7 @@
   <nav>
     <span class="color-nav">
       <h2>Work</h2>
+      <span class="coming"> Coming Soon</span>
       <?php
         if (has_nav_menu('primary-work')) :
           wp_nav_menu(array( 'theme_location' => 'primary-work' ));
@@ -64,7 +65,7 @@
 
     <div class="for-hire">
       <span class="icon-office"></span>
-      <a href="#">Hire me!</a>
+      <a href="#">Available for work</a>
     </div>
 
     <div class="pag-dots">

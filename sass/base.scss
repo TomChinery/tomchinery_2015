@@ -47,3 +47,9 @@ section {
 #main-anchor {
   height:1px;
 }
+
+.warning-tag {
+  background-color:$warning-color;
+  border-radius:2px;
+  padding:5px;
+}
