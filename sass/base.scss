@@ -2,14 +2,14 @@
 
 /** assign variables */
 $font-color: #2f363b;
+$overview-color: rgb(198, 207, 212);
+$footer-color: #f2f2f2;
 
 $blue-color: #3498db;
 $red-color: #e74c3c;
 $green-color: #2ecc71;
 $yellow-color: #f1c40f;
 $light-blue-color: #93b9ec;
-$overview-color: rgb(198, 207, 212);
-$footer-color: #f2f2f2;
 
 $warning-color: #EFA133;
 $info-color: #5bc0de;
@@ -23,6 +23,7 @@ $info-color: #5bc0de;
 @import 'content';
 @import 'hero';
 @import 'office';
+@import 'footer';
 
 body {
   height:auto;
@@ -44,5 +45,5 @@ section {
 }
 
 #main-anchor {
-  height:20px;
+  height:1px;
 }

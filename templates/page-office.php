@@ -44,4 +44,48 @@
   <article class="type">
     <?php the_field('type_3'); ?>
   </article>
+
+  <article class="reasons-to-work">
+    <h2>Four great reasons to work with me</h2>
+    <div class="reason-block">
+      <h1>01</h1>
+      <img src="./wp-content/themes/tomchinery/img/moleskin.jpg" alt=""/>
+      <h3>I take professionalism seriously</h3>
+      <hr>
+      <p>
+        Professionalism is a key part to successful projects, having it means I can
+        get the high quality and efficiency I set out to provide.
+      </p>
+    </div>
+    <div class="reason-block">
+      <h1>02</h1>
+      <img src="./wp-content/themes/tomchinery/img/moleskin.jpg" alt="" />
+      <h3>I make forward thinking products</h3>
+      <hr>
+      <p>
+        The next generation of the web is constantly changing. I design and develop software
+        for today's users and tomorrows platforms.
+      </p>
+    </div>
+    <div class="reason-block">
+      <h1>03</h1>
+      <img src="./wp-content/themes/tomchinery/img/moleskin.jpg" alt="" />
+      <h3>I'm passionate about the things I build</h3>
+      <hr>
+      <p>
+        Obessing over the details while seeing and implementing the bigger picture.
+        My websites make an impact, designed to delight and flawlessly executed.
+      </p>
+    </div>
+    <div class="reason-block">
+      <h1>04</h1>
+      <img src="./wp-content/themes/tomchinery/img/moleskin.jpg" alt="" />
+      <h3>I'm inspired by people</h3>
+      <hr>
+      <p>
+        People are what makes us human, everyone I meet, work for, or see inspires
+        me further to be the best I can be and make great things.
+      </p>
+    </div>
+  </article>
 </main>

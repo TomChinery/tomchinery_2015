@@ -279,7 +279,7 @@ main {
     font-size: 16px; }
 
 .hero {
-  margin-top: 86px;
+  margin-top: 75px;
   margin-bottom: 90px; }
 
 .hero h1 {
@@ -325,6 +325,94 @@ main article.type img {
 main article.type.type-2 h3 {
   margin-top: 46px; }
 
+article.reasons-to-work h2 {
+  margin-right: 100%;
+  width: 280px; }
+article.reasons-to-work h1 {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6em;
+  letter-spacing: -5px;
+  color: white;
+  top: 85px;
+  left: 0;
+  right: 0;
+  text-align: center; }
+article.reasons-to-work hr {
+  width: 10%;
+  height: 2px;
+  border: none;
+  margin-left: 10px;
+  float: left;
+  background-color: #2f363b; }
+article.reasons-to-work .reason-block img {
+  width: 100%; }
+article.reasons-to-work .reason-block {
+  width: 50%;
+  position: relative;
+  float: left;
+  margin-top: 50px;
+  margin-bottom: 0px; }
+article.reasons-to-work .reason-block h3 {
+  float: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -1px;
+  padding: 50px 20px 10px 10px;
+  font-family: 'Montserrat', sans-serif; }
+article.reasons-to-work .reason-block p {
+  font-size: 16px;
+  width: 100%;
+  padding: 5px 20px 5px 10px; }
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  height: 400px; }
+  footer article {
+    float: left;
+    padding-left: 90px; }
+  footer h3 {
+    float: none;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -1px;
+    padding: 30px 0 10px 0;
+    font-family: 'Montserrat', sans-serif; }
+  footer h3:last-child {
+    padding-top: 20px; }
+  footer h3:first-child {
+    padding-top: 50px; }
+  footer img {
+    float: left; }
+  footer p {
+    clear: both;
+    padding-top: 50px; }
+  footer a {
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+    color: #2f363b;
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1.60; }
+  footer a:nth-child(n+5) {
+    float: left;
+    margin-top: 10px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding: 8px 10px 10px 10px;
+    margin-right: 20px;
+    border: 1px solid gray;
+    transition: background 0.8s; }
+  footer a:nth-child(n+5):hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
 body {
   height: auto;
   overflow-y: hidden; }
@@ -341,4 +429,4 @@ section {
   margin: 0 auto; }
 
 #main-anchor {
-  height: 20px; }
+  height: 1px; }
