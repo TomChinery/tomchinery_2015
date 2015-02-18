@@ -15,7 +15,7 @@
       <a href="#"><span class="icon-codepen"></span></a>
 
       <p>
-        &copy; 2014 - 2015 Tom Chinery. All rights reserved.
+        &copy; 2014 - <?php echo date("Y"); ?> Tom Chinery. All rights reserved.
       </p>
     </article>
   </footer>
