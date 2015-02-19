@@ -360,7 +360,8 @@ article.reasons-to-work hr {
   float: left;
   background-color: #2f363b; }
 article.reasons-to-work .reason-block img {
-  width: 100%; }
+  width: 100%;
+  height: 264px; }
 article.reasons-to-work .reason-block {
   width: 50%;
   position: relative;

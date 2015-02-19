@@ -49,7 +49,7 @@
     <h2>Four great reasons to work with me</h2>
     <div class="reason-block">
       <h1>01</h1>
-      <img src="./wp-content/themes/tomchinery/img/moleskin.jpg" alt=""/>
+      <img src="./wp-content/themes/tomchinery/img/costa.jpeg" alt=""/>
       <h3>I take professionalism seriously</h3>
       <hr>
       <p>
@@ -59,7 +59,7 @@
     </div>
     <div class="reason-block">
       <h1>02</h1>
-      <img src="./wp-content/themes/tomchinery/img/moleskin.jpg" alt="" />
+      <img src="./wp-content/themes/tomchinery/img/headphones3.jpg" alt="" />
       <h3>I make forward thinking products</h3>
       <hr>
       <p>
@@ -69,7 +69,7 @@
     </div>
     <div class="reason-block">
       <h1>03</h1>
-      <img src="./wp-content/themes/tomchinery/img/moleskin.jpg" alt="" />
+      <img src="./wp-content/themes/tomchinery/img/mba.jpg" alt="" />
       <h3>I'm passionate about the things I build</h3>
       <hr>
       <p>
@@ -79,7 +79,7 @@
     </div>
     <div class="reason-block">
       <h1>04</h1>
-      <img src="./wp-content/themes/tomchinery/img/moleskin.jpg" alt="" />
+      <img src="./wp-content/themes/tomchinery/img/commute.jpg" alt="" />
       <h3>I'm inspired by people</h3>
       <hr>
       <p>
