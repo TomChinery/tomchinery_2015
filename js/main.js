@@ -8,11 +8,19 @@ $(document).ready(function () {
     showNav();
   });
 
+  $('.icon-menu7').click(function () {
+    showNav();
+  });
+
+  $('.icon-cross2').click(function () {
+    closeNav();
+  });
+
   $('.chevron').on('click', function () {
     mainState();
   });
 
-  $(window).on ('scroll', function(e) {
+  $(window).on('scroll', function(e) {
     var y = $(this).scrollTop();
 
     scrollDirection(y);
@@ -63,7 +71,13 @@ $(document).ready(function () {
   }
 
   function flipIn( element ) {
+    element.removeClass('flipOutX');
     element.show().addClass('flipInX animated');
+  }
+
+  function flipOut( element ) {
+    element.removeClass('flipInX');
+    element.addClass('flipOutX');
   }
 
   function setFixed( array ) {
@@ -114,6 +128,34 @@ $(document).ready(function () {
       }, 375);
 
     }, 500);
+  }
+
+  function closeNav() {
+    $('nav').css('height', '370px');
+
+    setTimeout(function() {
+
+      flipOut( $('nav .color-nav:nth-child(1)') );
+
+      setTimeout(function() {
+        flipOut( $('nav .color-nav:nth-child(2)') );
+      }, 125);
+
+      setTimeout(function() {
+        flipOut( $('nav .color-nav:nth-child(3)') );
+      }, 250);
+
+      setTimeout(function() {
+        flipOut( $('nav .color-nav:nth-child(4)') );
+      }, 375);
+
+    }, 500);
+
+    setTimeout(function () {
+      $('nav').css('height', '0px');
+      $('nav .color-nav').hide();
+    }, 1400);
+
   }
 
 });
