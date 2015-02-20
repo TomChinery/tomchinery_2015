@@ -53,7 +53,7 @@
       <h3>I take professionalism seriously</h3>
       <hr>
       <p>
-        Professionalism is a key part to successful projects, having it means I can
+        Professionalism is a key part to successful projects, it means I can
         get the high quality and efficiency I set out to provide.
       </p>
     </div>
@@ -63,8 +63,9 @@
       <h3>I make forward thinking products</h3>
       <hr>
       <p>
-        The next generation of the web is constantly changing. I design and develop software
+        The web is constantly changing. I design and develop software
         for today's users and tomorrows platforms.
+        <br /> <br />
       </p>
     </div>
     <div class="reason-block">
@@ -73,7 +74,7 @@
       <h3>I'm passionate about the things I build</h3>
       <hr>
       <p>
-        Obessing over the details while seeing and implementing the bigger picture.
+        Obessing over the details while implementing the bigger picture.
         My websites make an impact, designed to delight and flawlessly executed.
       </p>
     </div>
@@ -83,7 +84,7 @@
       <h3>I'm inspired by people</h3>
       <hr>
       <p>
-        People are what makes us human, everyone I meet, work for, or see inspires
+        Everyone I meet, work for, or see inspires
         me further to be the best I can be and make great things.
       </p>
     </div>

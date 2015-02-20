@@ -7,12 +7,22 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="description" content="Tom Chinery, a Web Developer available for freelance work.">
+  <meta property="og:image" content="http://www.gravatar.com/avatar/3a04b762a5e1a27b0a9d440a8382b417?size=200px">
+  <meta property="og:title" content="Tom Chinery: An Independent Web Developer">
+  <meta property="og:url" content="http://tomchinery.com/">
+
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-  <!-- Don't steal my sourcecode, I worked on it night and day for 3 weeks to get it to this state -->
+  <!-- Easter Egg: Pink Fluffy Unicorns Dancing on Rainbows :D -->
 
 <header>
   <nav>

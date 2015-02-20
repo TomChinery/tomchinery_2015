@@ -3,7 +3,11 @@ $(document).ready(function () {
   var fixedElements = [ $('header'), $('.line-bg') ];
   var lastScrollTop = 0;
   var scrollDir = "down";
+  var imgHeight = 0;
+  var navHeight = "350px";
+  var navHeightBigger = "370px";
 
+  // logic
   $('.icon-menu7').hover(function () {
     showNav();
   });
@@ -13,6 +17,10 @@ $(document).ready(function () {
   });
 
   $('.icon-cross2').click(function () {
+    closeNav();
+  });
+
+  $('nav a').click(function () {
     closeNav();
   });
 
@@ -48,7 +56,42 @@ $(document).ready(function () {
     }
   });
 
-  // helper methods (that do stuff)
+  $(".hero img").load(function(){
+    getImageSizes();
+  });
+
+  $(window).resize(function() {
+    getImageSizes();
+  });
+
+  if ( $(window).width() <= 768 ) {
+    var winHeight = $(window).height() - ( 12 / 100 * $(window).height() );
+    navHeight = winHeight + "px";
+    navHeightBigger = ( winHeight + 20 ) + "px";
+  }
+
+  if ( $(window).height() <= 580 /* && $(window).width() is less than 768 */ ) {
+    // style things smaller
+    $('nav h2').css('padding-top', '10px' );
+    $('nav h2').css('padding-bottom', '10px');
+    $('nav .color-nav:nth-child(1) h2').css('padding-bottom', '27px');
+
+    $('nav a').css('padding', "5px 10px");
+    $('nav a').css('font-size', '12px');
+
+    var winHeight = $(window).height();
+    navHeight = winHeight + "px";
+    navHeightBigger = ( winHeight + 20 ) + "px";
+  }
+
+  // Helpers
+  function getImageSizes() {
+    $(".hero img").each(function() {
+        var $this = $(this);
+        $('.hero .overlay').height($this.height());
+    });
+  }
+
   function scrollDirection( y ) {
     var st = y;
 
@@ -107,11 +150,11 @@ $(document).ready(function () {
   }
 
   function showNav() {
-    $('nav').css('height', '370px');
+    $('nav').css('height', navHeightBigger);
 
     setTimeout(function() {
 
-      $('nav').css('height', '350px');
+      $('nav').css('height', navHeight);
 
       flipIn( $('nav .color-nav:nth-child(1)') );
 
@@ -131,22 +174,22 @@ $(document).ready(function () {
   }
 
   function closeNav() {
-    $('nav').css('height', '370px');
+    $('nav').css('height', navHeightBigger);
 
     setTimeout(function() {
 
-      flipOut( $('nav .color-nav:nth-child(1)') );
-
-      setTimeout(function() {
-        flipOut( $('nav .color-nav:nth-child(2)') );
-      }, 125);
+      flipOut( $('nav .color-nav:nth-child(4)') );
 
       setTimeout(function() {
         flipOut( $('nav .color-nav:nth-child(3)') );
+      }, 125);
+
+      setTimeout(function() {
+        flipOut( $('nav .color-nav:nth-child(2)') );
       }, 250);
 
       setTimeout(function() {
-        flipOut( $('nav .color-nav:nth-child(4)') );
+        flipOut( $('nav .color-nav:nth-child(1)') );
       }, 375);
 
     }, 500);
