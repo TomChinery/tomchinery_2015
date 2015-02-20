@@ -70,12 +70,11 @@ $(document).ready(function () {
     navHeightBigger = ( winHeight + 20 ) + "px";
   }
 
-  if ( $(window).height() <= 580 /* && $(window).width() is less than 768 */ ) {
-    // style things smaller
+  if ( $(window).height() <= 580  && $(window).width() <= 768 ) {
+    // style things smaller - Yuck JS styling elements *shivers*
     $('nav h2').css('padding-top', '10px' );
     $('nav h2').css('padding-bottom', '10px');
     $('nav .color-nav:nth-child(1) h2').css('padding-bottom', '27px');
-
     $('nav a').css('padding', "5px 10px");
     $('nav a').css('font-size', '12px');
 
