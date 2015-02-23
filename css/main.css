@@ -217,7 +217,8 @@ nav {
     margin-top: -17px;
     width: 100%;
     text-align: center; }
-  nav a:hover {
+  nav a:hover,
+  nav a.current {
     background-color: rgba(0, 0, 0, 0.1); }
 
 header {

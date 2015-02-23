@@ -79,7 +79,7 @@ function bear_nav_args( $args ) {
 /** Whitelist body classes */
 function bear_body_class( $wp_classes, $extra_classes ) {
 
-  $whitelist = array('home', 'custom-background', 'current-menu-item');
+  $whitelist = array('home', 'custom-background');
 
   $wp_classes = array_intersect( $wp_classes, $whitelist );
 
