@@ -52,7 +52,6 @@
       ?>
     </span>
     <span class="color-nav">
-      <span class="icon-cross2"></span>
       <h2>Contact</h2>
       <?php
         if (has_nav_menu('primary-contact')) :
@@ -60,6 +59,7 @@
         endif;
       ?>
     </span>
+    <span class="icon-cross2"></span>
   </nav>
 
   <div class="line-bg">

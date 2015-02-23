@@ -79,7 +79,7 @@ function bear_nav_args( $args ) {
 /** Whitelist body classes */
 function bear_body_class( $wp_classes, $extra_classes ) {
 
-  $whitelist = array('home', 'custom-background');
+  $whitelist = array('home', 'custom-background', 'current-menu-item');
 
   $wp_classes = array_intersect( $wp_classes, $whitelist );
 
@@ -88,7 +88,7 @@ function bear_body_class( $wp_classes, $extra_classes ) {
 
 /** load custom 'Google' fonts */
 function bear_load_fonts() {
-  wp_register_style( 'icomoon', 'http://i.icomoon.io/public/temp/55ebeabe32/Portfolio/style.css');
+  wp_register_style( 'icomoon',  get_template_directory_uri() . "/fonts/style.css");
   wp_register_style( 'fonts', 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:300,400');
   wp_register_style( 'added_font', 'http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic');
   wp_register_style( 'monster', 'http://fonts.googleapis.com/css?family=Montserrat:400,700');

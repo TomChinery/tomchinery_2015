@@ -116,10 +116,10 @@ span.icon-cross2 {
   right: 20px;
   top: 20px;
   cursor: pointer;
-  padding: 3px; }
+  padding: 3px;
+  color: white; }
 
 span.icon-menu7 {
-  color: white;
   background-color: #c6cfd4; }
 
 span.icon-cross2:hover {

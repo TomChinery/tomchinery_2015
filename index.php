@@ -13,8 +13,6 @@
 
         get_template_part('templates/main', 'intro');
 
-        get_template_part('templates/page', 'office');
-        
       else :
 
         the_content();
