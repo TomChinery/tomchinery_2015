@@ -437,6 +437,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.1); }
 
 /* import page/post specific styles */
+@media all and (max-width: 1040px) {
+  section.intro article {
+    padding-left: 10px;
+    padding-right: 10px; } }
 @media all and (max-width: 768px) {
   section.intro {
     min-height: 650px; }
@@ -512,7 +516,20 @@ footer {
   header .icon-office {
     font-size: 30px; }
   header .pag-dots {
-    margin-top: 28px; } }
+    margin-top: 30px;
+    width: 177px; }
+  header .pag-dots a {
+    height: 12px;
+    width: 12px; } }
+@media all and (max-width: 600px) {
+  header .for-hire {
+    font-size: 12px; } }
+@media all and (max-width: 400px) {
+  header .for-hire span {
+    display: none; }
+  header .for-hire a {
+    top: -3px;
+    width: 50px; } }
 /* global responsive styles go here */
 body {
   height: auto;

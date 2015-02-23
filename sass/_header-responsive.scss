@@ -18,7 +18,34 @@
     }
 
     .pag-dots {
-      margin-top:28px;
+      margin-top:30px;
+      width:177px;
+    }
+
+    .pag-dots a {
+      height:12px;
+      width:12px;
+    }
+  }
+}
+
+@media all and (max-width:600px) {
+  header {
+    .for-hire {
+      font-size:12px;
+    }
+  }
+}
+
+@media all and (max-width:400px) {
+  header {
+    .for-hire span {
+      display:none;
+    }
+
+    .for-hire a {
+      top:-3px;
+      width:50px;
     }
   }
 }

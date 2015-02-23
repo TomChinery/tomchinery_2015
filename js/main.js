@@ -174,6 +174,8 @@ $(document).ready(function () {
       }, 375);
 
     }, 500);
+
+    $('.icon-cross2').show();
   }
 
   function closeNav() {
@@ -202,6 +204,7 @@ $(document).ready(function () {
       $('nav .color-nav').hide();
     }, 1400);
 
+    $('.icon-cross2').hide();
   }
 
 });
