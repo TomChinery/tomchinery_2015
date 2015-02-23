@@ -1,0 +1,57 @@
+@media all and (max-width: 945px) {
+  footer {
+    img {
+      height:280px;
+      width:280px;
+      position:relative;
+      top:58px;
+    }
+
+    article {
+      padding-left:40px;
+    }
+  }
+}
+
+@media all and (max-width: 772px) {
+  footer {
+    height:700px;
+
+    img {
+      margin-left:40px;
+      top:40px;
+    }
+
+    h3:first-child {
+      padding-top:60px;
+    }
+  }
+}
+
+@media all and (max-width:492px) {
+  footer {
+    article {
+      padding-left:20px;
+    }
+
+    h3 {
+      font-size:2em;
+    }
+
+    img {
+      margin-left:20px;
+      top:20px;
+    }
+  }
+}
+
+@media all and (max-width:410px) {
+  footer {
+    height:640px;
+    
+    img {
+      height:200px;
+      width:200px;
+    }
+  }
+}

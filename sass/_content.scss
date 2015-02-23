@@ -8,11 +8,8 @@ main {
     margin-bottom:90px;
   }
 
-  p:first-child {
-  }
-
   p {
-    width:620px;
+    max-width:620px;
     font-weight:400;
     font-family: 'Merriweather', serif;
     float:right;

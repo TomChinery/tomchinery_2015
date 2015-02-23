@@ -277,7 +277,7 @@ main {
     display: inline-block;
     margin-bottom: 90px; }
   main p {
-    width: 620px;
+    max-width: 620px;
     font-weight: 400;
     font-family: 'Merriweather', serif;
     float: right;
@@ -530,6 +530,55 @@ footer {
   header .for-hire a {
     top: -3px;
     width: 50px; } }
+@media all and (max-width: 768px) {
+  .huge-text {
+    font-size: 5.5em; } }
+@media all and (max-width: 900px) {
+  main article {
+    display: inline-block;
+    margin: 0 auto 60px auto;
+    padding: 0 20px 0 20px; }
+  main h2 {
+    margin-bottom: 30px; }
+  main p {
+    max-width: 100%;
+    clear: both;
+    display: inline-block; }
+  main article.reasons-to-work .reason-block {
+    margin-top: 0; } }
+@media all and (max-width: 945px) {
+  footer img {
+    height: 280px;
+    width: 280px;
+    position: relative;
+    top: 58px; }
+  footer article {
+    padding-left: 40px; } }
+@media all and (max-width: 772px) {
+  footer {
+    height: 700px; }
+    footer img {
+      margin-left: 40px;
+      top: 40px; }
+    footer h3:first-child {
+      padding-top: 60px; } }
+@media all and (max-width: 492px) {
+  footer article {
+    padding-left: 20px; }
+  footer h3 {
+    font-size: 2em; }
+  footer img {
+    margin-left: 20px;
+    top: 20px; } }
+@media all and (max-width: 410px) {
+  footer {
+    height: 640px; }
+    footer img {
+      height: 200px;
+      width: 200px; } }
+@media all and (max-width: 900px) {
+  .hero {
+    margin-bottom: 60px; } }
 /* global responsive styles go here */
 body {
   height: auto;

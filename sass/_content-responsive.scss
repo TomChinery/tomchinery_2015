@@ -1,0 +1,23 @@
+@media all and (max-width:900px) {
+  main {
+    article {
+      display:inline-block;
+      margin:0 auto 60px auto;
+      padding:0 20px 0 20px;
+    }
+
+    h2 {
+      margin-bottom:30px;
+    }
+
+    p {
+      max-width:100%;
+      clear:both;
+      display:inline-block;
+    }
+
+    article.reasons-to-work .reason-block {
+      margin-top:0;
+    }
+  }
+}
