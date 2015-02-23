@@ -104,7 +104,9 @@ section.intro {
     border-bottom: 2px solid gray;
     border-left: 2px solid gray;
     margin: 8% auto 0 auto;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     display: inline-block;
     cursor: pointer; }
   section.intro .right {
@@ -172,7 +174,6 @@ nav {
   width: 100%;
   height: 0;
   -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
   transition: height 0.5s; }
   nav .color-nav {
     display: none;
@@ -234,7 +235,8 @@ header .line-bg {
   height: 76px;
   margin-bottom: -76px;
   width: 100%;
-  transition: background 0.8s;
+  -webkit-transition: background 0.8s;
+          transition: background 0.8s;
   background: transparent; }
 header .pag-dots {
   display: none;
@@ -429,7 +431,8 @@ footer {
     padding: 8px 10px 10px 10px;
     margin-right: 20px;
     border: 1px solid gray;
-    transition: background 0.8s; }
+    -webkit-transition: background 0.8s;
+            transition: background 0.8s; }
   footer a:nth-child(n+5):hover {
     background-color: rgba(0, 0, 0, 0.1); }
 

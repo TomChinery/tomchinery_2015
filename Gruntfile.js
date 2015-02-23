@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: '**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass', 'autoprefixer']
       }
     },
     autoprefixer: {
@@ -25,13 +25,13 @@ module.exports = function(grunt) {
         options: {
           // Target-specific options go here.
         },
-        src: 'css/main.css',
-        dest: 'css/main.css'
+        src: 'css/main.css'
       },
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.registerTask('default',['watch']);
 }
