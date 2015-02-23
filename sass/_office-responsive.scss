@@ -1,3 +1,19 @@
-@media all and (max-width:900px) {
-  
+@media all and (max-width:650px) {
+  main {
+    article.reasons-to-work .reason-block {
+      width:100%;
+    }
+
+    article.reasons-to-work .reason-block h3 {
+      padding-top:20px;
+    }
+
+    article.reasons-to-work .reason-block p {
+      padding-bottom:20px;
+    }
+
+    article.reasons-to-work .reason-block br {
+      display:none;
+    }
+  }
 }

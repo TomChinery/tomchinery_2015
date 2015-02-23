@@ -327,7 +327,8 @@ main {
 
 .hero img {
   max-height: 600px;
-  width: 100%; }
+  width: 100%;
+  min-height: 350px; }
 
 main article.type h1 {
   font-family: 'Montserrat', sans-serif;
@@ -468,6 +469,15 @@ footer {
     font-size: 14px; }
   section.intro .left, section.intro .right {
     margin-top: 30%; } }
+@media all and (max-width: 650px) {
+  main article.reasons-to-work .reason-block {
+    width: 100%; }
+  main article.reasons-to-work .reason-block h3 {
+    padding-top: 20px; }
+  main article.reasons-to-work .reason-block p {
+    padding-bottom: 20px; }
+  main article.reasons-to-work .reason-block br {
+    display: none; } }
 @media all and (max-width: 950px) {
   nav a {
     font-size: 14px; }
@@ -533,6 +543,12 @@ footer {
 @media all and (max-width: 768px) {
   .huge-text {
     font-size: 5.5em; } }
+@media all and (max-width: 440px) {
+  .huge-text {
+    font-size: 4em; }
+
+  h1 {
+    font-size: 14px; } }
 @media all and (max-width: 900px) {
   main article {
     display: inline-block;
@@ -579,6 +595,10 @@ footer {
 @media all and (max-width: 900px) {
   .hero {
     margin-bottom: 60px; } }
+@media all and (max-width: 440px) {
+  .hero h1 {
+    max-width: 250px;
+    margin-top: 20%; } }
 /* global responsive styles go here */
 body {
   height: auto;
