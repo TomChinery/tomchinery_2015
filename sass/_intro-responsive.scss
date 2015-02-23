@@ -1,5 +1,8 @@
 @media all and (max-width:768px) {
   section.intro {
+
+    min-height:650px;
+
     article {
       display:block;
       float:none;
@@ -22,13 +25,19 @@
     .chevron {
       bottom:20px;
     }
+
+    .left, .right {
+      margin-top:14%;
+    }
+
+    .chevron {
+      display:none;
+    }
   }
 }
 
 @media all and (max-width:440px) {
   section.intro {
-    min-height:630px;
-    
     h1 .huge-text {
       font-size:4em;
     }
@@ -37,8 +46,8 @@
       font-size:14px;
     }
 
-    .chevron {
-      display:none;
+    .left, .right {
+      margin-top:30%;
     }
   }
 }

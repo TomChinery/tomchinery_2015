@@ -44,7 +44,7 @@ $(document).ready(function () {
     for( i = 0; i < 300; i++ ) {
 
 
-      if ( y == i && scrollDir == "down") {
+      if ( y == i && scrollDir == "down" && $(window).width() > 768 ) {
 
         slideTo( $('#main-anchor') );
 
@@ -110,6 +110,7 @@ $(document).ready(function () {
     $(document.body).animate({
         'scrollTop':   anchor.offset().top
     }, 800, function () {
+
       console.log('animated bitchhead');
     });
 
