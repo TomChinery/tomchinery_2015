@@ -1,0 +1,44 @@
+@media all and (max-width:768px) {
+  section.intro {
+    article {
+      display:block;
+      float:none;
+      width:90%;
+      margin:0 auto;
+    }
+
+    article:nth-child(2) {
+      margin-left:auto;
+    }
+
+    h1 .huge-text {
+      font-size:5.5em;
+    }
+
+    .contain {
+      margin-top:50px;
+    }
+
+    .chevron {
+      bottom:20px;
+    }
+  }
+}
+
+@media all and (max-width:440px) {
+  section.intro {
+    min-height:630px;
+    
+    h1 .huge-text {
+      font-size:4em;
+    }
+
+    h1 {
+      font-size:14px;
+    }
+
+    .chevron {
+      display:none;
+    }
+  }
+}

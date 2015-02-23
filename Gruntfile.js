@@ -13,6 +13,21 @@ module.exports = function(grunt) {
         files: '**/*.scss',
         tasks: ['sass']
       }
+    },
+    autoprefixer: {
+
+      options: {
+        // Task-specific options go here.
+      },
+
+      // prefix the specified file
+      single_file: {
+        options: {
+          // Target-specific options go here.
+        },
+        src: 'css/main.css',
+        dest: 'css/main.css'
+      },
     }
   });
 

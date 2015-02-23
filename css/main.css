@@ -43,7 +43,7 @@ section.intro {
     width: 10%;
     height: 2px;
     border: none;
-    background-color: #2f363b;
+    background-color: #9b9b9b;
     margin: 30px auto 35px auto; }
   section.intro strong {
     font-size: 16px; }
@@ -89,8 +89,12 @@ section.intro {
     font-size: 2em;
     border: 1px solid gray;
     padding: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     width: 45px;
-    margin: 280px auto 0 auto;
     cursor: pointer; }
   section.intro .chevron:hover {
     background-color: rgba(0, 0, 0, 0.1); }
@@ -430,6 +434,29 @@ footer {
     background-color: rgba(0, 0, 0, 0.1); }
 
 /* import page/post specific styles */
+@media all and (max-width: 768px) {
+  section.intro article {
+    display: block;
+    float: none;
+    width: 90%;
+    margin: 0 auto; }
+  section.intro article:nth-child(2) {
+    margin-left: auto; }
+  section.intro h1 .huge-text {
+    font-size: 5.5em; }
+  section.intro .contain {
+    margin-top: 50px; }
+  section.intro .chevron {
+    bottom: 20px; } }
+@media all and (max-width: 440px) {
+  section.intro {
+    min-height: 630px; }
+    section.intro h1 .huge-text {
+      font-size: 4em; }
+    section.intro h1 {
+      font-size: 14px; }
+    section.intro .chevron {
+      display: none; } }
 @media all and (max-width: 950px) {
   nav a {
     font-size: 14px; }
@@ -467,6 +494,18 @@ footer {
     margin: 0 auto;
     right: 0;
     top: 40px; } }
+@media all and (max-width: 768px) {
+  header .line-bg {
+    height: 60px; }
+  header span.icon-menu7 {
+    font-size: 3.5em;
+    top: 15px; }
+  header .for-hire {
+    height: 50px; }
+  header .icon-office {
+    font-size: 30px; }
+  header .pag-dots {
+    margin-top: 28px; } }
 /* global responsive styles go here */
 body {
   height: auto;
