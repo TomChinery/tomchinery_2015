@@ -60,8 +60,11 @@ $(document).ready(function () {
     getImageSizes();
   });
 
+  $('section.intro').height( $(window).height() );
+
   $(window).resize(function() {
     getImageSizes();
+    $('section.intro').height( $(window).height() );
   });
 
   if ( $(window).width() <= 768 ) {

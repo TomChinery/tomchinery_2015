@@ -3,7 +3,7 @@
 /** import custom fonts */
 @font-face {
   font-family: 'Futura';
-  src: url("http://localhost/~tomchinery/tomchinery_2015/public/wp-content/themes/tomchinery/fonts/futura-bold.ttf"); }
+  src: url("http://192.168.0.4/~tomchinery/tomchinery_2015/public/wp-content/themes/tomchinery/fonts/futura-bold.ttf"); }
 /** create some common styles */
 body {
   color: #2f363b; }
@@ -38,8 +38,7 @@ strong {
 
 section.intro {
   text-align: center;
-  height: 400px;
-  margin-bottom: 400px; }
+  height: 800px; }
   section.intro hr {
     width: 10%;
     height: 2px;
@@ -235,7 +234,7 @@ header .line-bg {
   background: transparent; }
 header .pag-dots {
   display: none;
-  width: 192px;
+  width: 193px;
   margin: 0 auto;
   margin-top: 36px; }
 header .pag-dots a {
@@ -310,7 +309,8 @@ main {
   margin-top: 9%; }
 
 .hero h1 .huge-text {
-  line-height: 1; }
+  line-height: 1;
+  padding-top: 12%; }
 
 .overlay {
   z-index: 1;
@@ -470,7 +470,9 @@ footer {
 /* global responsive styles go here */
 body {
   height: auto;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
 ::-webkit-scrollbar-track {
   display: none; }

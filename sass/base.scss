@@ -29,6 +29,9 @@ $info-color: #5bc0de;
 body {
   height:auto;
   overflow-y: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+
 }
 
 ::-webkit-scrollbar-track {
