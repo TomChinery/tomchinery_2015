@@ -298,6 +298,9 @@ main {
   main article.type p {
     font-size: 16px; }
 
+main.archive-container {
+  margin-top: 100px; }
+
 .hero {
   margin-top: 75px;
   margin-bottom: 90px; }
@@ -600,6 +603,42 @@ footer {
     max-width: 250px;
     margin-top: 20%; } }
 /* global responsive styles go here */
+main article.post-archive {
+  min-height: 260px;
+  height: auto;
+  margin-bottom: 30px; }
+  main article.post-archive h2 {
+    max-width: 100%;
+    margin-bottom: 20px; }
+  main article.post-archive p {
+    max-width: 100%;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    float: none;
+    clear: both; }
+  main article.post-archive a.read-more {
+    display: block;
+    padding-top: 20px;
+    color: #2f363b;
+    font-style: italic;
+    text-decoration: none; }
+  main article.post-archive a.read-more:hover {
+    text-decoration: underline; }
+main article.post-archive:last-child {
+  margin-bottom: 60px; }
+
+main.post-container {
+  margin-top: 100px;
+  margin-bottom: 60px; }
+  main.post-container article.post-archive {
+    height: auto;
+    margin-bottom: 0; }
+    main.post-container article.post-archive h2 {
+      margin-bottom: 30px; }
+    main.post-container article.post-archive p {
+      font-size: 24px;
+      margin: 20px 0 20px 0; }
+
 body {
   height: auto;
   overflow-y: hidden;

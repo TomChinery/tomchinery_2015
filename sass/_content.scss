@@ -1,7 +1,7 @@
 main {
   max-width:940px;
   margin:0 auto;
-
+  
   article {
     width:100%;
     display:inline-block;
@@ -37,4 +37,8 @@ main {
   article.type p {
     font-size:16px;
   }
+}
+
+main.archive-container {
+  margin-top:100px;
 }
